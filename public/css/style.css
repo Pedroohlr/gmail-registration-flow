@@ -455,3 +455,11 @@ dialog.dialog[open] { animation: pop 0.2s ease-out; }
   font-size: 13px; font-weight: 600;
 }
 .env-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+
+.env-notice {
+  margin-top: 24px; padding: 14px 16px; border-radius: 16px;
+  background: var(--surface-2); border: 1px solid var(--outline-soft);
+  color: var(--text-2); font-size: 13px;
+}
+.env-notice p + p { margin-top: 8px; }
+.env-notice strong { color: var(--text); }
