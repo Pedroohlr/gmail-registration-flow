@@ -1,0 +1,15 @@
+services:
+  auth4:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      DATA_DIR: /app/data
+      EMAIL_DOMAIN: auth4.app
+    volumes:
+      - auth4-data:/app/data
+
+volumes:
+  auth4-data:
